@@ -1,0 +1,6 @@
+
+
+ export const GET_DATA_REQUEST = "GET_DATA_REQUEST"
+ export const GET_DATA_SUCCESS = "GET_DATA_SUCCESS"
+ export const GET_DATA_FAILED = "GET_DATA_FAILED"
+ export const GET_DATA_DELETE = "GET_DATA_DELETE"

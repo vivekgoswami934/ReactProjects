@@ -1,0 +1,54 @@
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid black;
+  height: 90vh;
+  background-color: rgb(221, 241, 241);
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sidebar div {
+  width: 100%;
+  border: 2px solid black;
+  height: 300px;
+}
+.content {
+  width: 85%;
+  border: 2px solid black;
+  display: flex;
+}
+
+.content > div {
+  height: 100%;
+  border: 2px solid black;
+  width: 33.33%;
+  gap: 20px;
+}
+.content div h3 {
+  margin-top: 0;
+  text-align: center;
+  background-color: rgb(134, 69, 69);
+  color: white;
+}
+
+.todoDetails {
+  text-align: left;
+  padding-top: 40px;
+}
+
+.singlePage {
+  width: 80%;
+  margin: auto;
+
+  border: 3px solid rgb(94, 124, 11);
+}

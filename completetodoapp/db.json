@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "title": "Main Task 1",
+      "date": "17-10-2022",
+      "titleType": "Personal",
+      "data": [
+        { "status": false, "name": "subtask 1 of 1" },
+        { "status": false, "name": "subtask 1 of 1" }
+      ],
+      "id": 1
+    },
+    {
+      "title": "Main Task 2",
+      "date": "17-10-2022",
+      "titleType": "Personal",
+      "data": [
+        { "status": false, "name": "subtask 1 of 1" },
+        { "status": true, "name": "subtask 1 of 1" }
+      ],
+      "id": 2
+    },
+    {
+      "title": "Main Task 3",
+      "date": "17-10-2022",
+      "titleType": "Personal",
+      "data": [
+        { "status": true, "name": "subtask 1 of 1" },
+        { "status": false, "name": "subtask 1 of 1" }
+      ],
+      "id": 3
+    },
+    {
+      "title": "Main Task 4",
+      "date": "17-10-2022",
+      "titleType": "Personal",
+      "data": [
+        { "status": true, "name": "subtask 1 of 1" },
+        { "status": true, "name": "subtask 1 of 1" }
+      ],
+      "id": 4
+    }
+  ]
+}
