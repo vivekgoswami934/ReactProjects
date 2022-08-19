@@ -1,0 +1,49 @@
+.iconRotate {
+    animation: iconRotator 1s linear 0s 1;
+}
+
+@keyframes iconRotator {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.zoom {
+    transition: all 0.5s linear;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+
+.tagLine {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* HEX color #FF8000, Color name: Dark Orange, RGB(255,128,0), Windows ... */
+
+#madeByVivekGoswami {
+    color: #FF8000;
+    font-weight: 500;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: tagline 5s  infinite alternate;
+    border-right: 3px solid #FF8000; 
+}
+
+@keyframes tagline {
+      0% {
+          width: 0ch;
+      }
+      50% {
+          width: 28ch;
+      }
+}
