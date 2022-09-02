@@ -5,7 +5,7 @@ const SinglePage = ({ datas }) => {
   console.log(datas.data);
   let { titleType, title, date,data } = datas;
   return (
-    <div className="singlePage">
+    <div className="singlePage" style={{marginTop : "3px"}}>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <p>{titleType}</p>
         <p>{date}</p>
@@ -14,18 +14,14 @@ const SinglePage = ({ datas }) => {
 
       {data.map((el) => {
         return (
-          <>
-          <span key={Date.now()} >
-
+          <div key={Date.now()*Math.random()} >
+          <span >
             <input type="checkbox" value={el.status}></input>
-            <p>{el.name}</p>
+            <>{el.name}</>
           </span>
-          </>
+          </div>
         );
       })}
-
-      <p>SubTask</p>
-      <p>SubTask</p>
     </div>
   );
 };

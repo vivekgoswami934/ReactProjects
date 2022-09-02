@@ -13,7 +13,9 @@ const Pages = ({ data }) => {
     endPageIndex,
     currentPageIndex,
     displayPageFunc,
-  ] = usePagination(5, data.length);
+  ] = usePagination(6, data.length);
+
+
   return (
     <div>
       {(() => {
@@ -37,8 +39,8 @@ const Pages = ({ data }) => {
       <Pagination
         color="primary"
         count={totalPages}
-        onChange={(e, value) => displayPageFunc(value)
-        }
+        style={{width:"28%",margin : "auto"}}
+        onChange={(e, value) => displayPageFunc(value)}
       />
     </div>
   );

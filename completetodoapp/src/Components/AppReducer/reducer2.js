@@ -19,6 +19,7 @@ export const reducer2 = (state = initialState, action) => {
         todoArr: [...state.todoArr, payload],
       };
     case ADD_IN_INPROGRESS:
+     { console.log(initialState.inprogressArr);}
       return {
         ...state,
         inprogressArr: [...state.inprogressArr, payload],
