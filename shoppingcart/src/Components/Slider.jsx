@@ -47,13 +47,11 @@ const ImageContainer = styled.div`
   height: 94%;
   flex: 1;
   /* border: 2px solid teal; */
-  
+
   margin-left: 180px;
 `;
 const Image = styled.img`
   height: 90%;
-  
-
 `;
 const InfoContainer = styled.div`
   flex: 1;
@@ -81,7 +79,7 @@ const Button = styled.button`
 const Slider = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const handleClick = (direction) => {
-    console.log(direction == "left" ? "left" : "right");
+    // console.log(direction == "left" ? "left" : "right");
 
     if (direction == "left") {
       setSliderIndex(sliderIndex > 0 ? sliderIndex - 1 : 2);
