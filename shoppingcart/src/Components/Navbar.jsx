@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border: 1px solid lightgray;
-//   background-color: lightgray;
+  //   background-color: lightgray;
 `;
 
 const Left = styled.div`
@@ -49,13 +49,13 @@ const Logo = styled.h3`
 const Right = styled.div`
   flex: 1;
   display: flex;
-  align-items:center ;
-  justify-content:flex-end;
+  align-items: center;
+  justify-content: flex-end;
 `;
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-right : 35px
+  margin-right: 35px;
 `;
 
 const Navbar = () => {
@@ -66,11 +66,11 @@ const Navbar = () => {
           <Language>English</Language>
           <SearchContainer>
             <Input />
-            <Search  style={{color:"gray",fontSize:"15px"}} />
+            <Search style={{ color: "gray", fontSize: "15px" }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Viv Shopping Cart</Logo>
+          <Logo style={{color:"teal"}}>Viv Shopping Cart</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
