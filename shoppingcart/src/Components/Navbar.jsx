@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 70px;
+  background-color: aliceblue;
 `;
 
 const Wrapper = styled.div`
@@ -70,13 +71,13 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo style={{color:"teal"}}>Viv Shopping Cart</Logo>
+          <Logo style={{color:"teal"}}>VivEk Shopping Cart</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGNIN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={1} color="secondary">
+            <Badge badgeContent={1} color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
