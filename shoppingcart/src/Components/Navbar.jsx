@@ -5,7 +5,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 70px;
-  background-color: aliceblue;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
 `;
 
 const Wrapper = styled.div`
@@ -77,7 +80,7 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGNIN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={1} color="primary">
+            <Badge badgeContent={5} color="error">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>

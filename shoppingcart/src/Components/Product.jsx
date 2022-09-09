@@ -34,11 +34,17 @@ const Container = styled.div`
   background-color: whitesmoke;
   transition : all 1s ease;
   border-radius: 20px;
+
+
   
+  &:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+    border-radius: 20px;
+  }
   &:hover ${Info} {
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 1;
-
   }
 `;
 
