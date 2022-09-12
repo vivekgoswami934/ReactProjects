@@ -1,0 +1,22 @@
+{
+  "name": "crudapp",
+  "version": "1.0.0",
+  "description": "crud app with node express and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
