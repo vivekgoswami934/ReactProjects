@@ -12,7 +12,8 @@ const Container = styled.div`
 const Announcements = () => {
   return (
     <Container>
-      Hurray!!! Super Deal ! Free Shipping on Orders Over $150
+      <marquee style={{ color: 'white', fontSize: '20px' }}> Hurray!!! Super Deal ! Free Shipping on Orders Over $150</marquee>
+     
     </Container>
   );
 };
