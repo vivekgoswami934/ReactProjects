@@ -3,6 +3,39 @@ import { Badge } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
+
+const Navbar = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          <Language>English</Language>
+          <SearchContainer>
+            <Input />
+            <Search style={{ color: "gray", fontSize: "15px" }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo style={{color:"teal"}}>VivEk Shopping Cart</Logo>
+        </Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGNIN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={5} color="error">
+              <ShoppingCartOutlined />
+            </Badge>
+          </MenuItem>
+        </Right>
+      </Wrapper>
+    </Container>
+  );
+};
+
+export default Navbar;
+
+
+
 const Container = styled.div`
   height: 80px;
   background-color: white;
@@ -64,33 +97,3 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-right: 35px;
 `;
-
-const Navbar = () => {
-  return (
-    <Container>
-      <Wrapper>
-        <Left>
-          <Language>English</Language>
-          <SearchContainer>
-            <Input />
-            <Search style={{ color: "gray", fontSize: "15px" }} />
-          </SearchContainer>
-        </Left>
-        <Center>
-          <Logo style={{color:"teal"}}>VivEk Shopping Cart</Logo>
-        </Center>
-        <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGNIN</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={5} color="error">
-              <ShoppingCartOutlined />
-            </Badge>
-          </MenuItem>
-        </Right>
-      </Wrapper>
-    </Container>
-  );
-};
-
-export default Navbar;
