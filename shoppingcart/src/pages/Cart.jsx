@@ -190,9 +190,9 @@ const ProductPrice = styled.span`
 const ProductId = styled.span``;
 
 const Hr = styled.hr`
-background-color: #eee;
-border: none;
-height: 4px;
+  background-color: #eee;
+  border: none;
+  height: 4px;
 `;
 
 const ProductColor = styled.div`
