@@ -7,6 +7,8 @@ const CryptoJS = require("crypto-js");
 const dotenv = require("dotenv");
 dotenv.config();
 
+const jwt = require("jsonwebtoken");
+
 //Register
 authRouter.post("/register", async (req, res) => {
   const newUser = new UserModel({
@@ -43,7 +45,16 @@ authRouter.post("/login", async (req, res) => {
     if (passsword !== req.body.password)
       return res.status(401).json("Wrong Password");
 
-    res.status(200).json(user);
+    const accessToken = jwt.sign(
+      {
+        id: user._id,
+        isAdmin: user.isAdmin,
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "3d" }
+    );
+
+    res.status(200).json({user, accessToken});
   } catch (err) {
     res.status(500).json(err);
   }
