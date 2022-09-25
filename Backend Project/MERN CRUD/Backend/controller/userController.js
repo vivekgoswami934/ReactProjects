@@ -2,9 +2,10 @@ const { UserModel } = require("../Model/userModel");
 
 const addUser = async (req, res) => {
   const user = req.body;
+  console.log(user);
   const newUser = new UserModel(user);
 
-  //   console.log(user)
+  //   console.log(user)   
   try {
     await newUser.save();
     res.status(201).json(newUser);
@@ -14,8 +15,9 @@ const addUser = async (req, res) => {
 };
 
 const getUSer = async (req, res) => {
+  const { userId } = req.body;
   try {
-    const data = await UserModel.find({});
+    const data = await UserModel.find({ userId });
     res.status(200).json(data);
   } catch (err) {
     res.status(404).json({ message: err.message });
@@ -46,11 +48,11 @@ const editUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   try {
-    await UserModel.deleteOne({_id:req.params.id})
-    res.status(200).json({message : "userDeltedSuccesfully"})
+    await UserModel.deleteOne({ _id: req.params.id });
+    res.status(200).json({ message: "userDeltedSuccesfully" });
   } catch (err) {
     res.status(409).json(err.message);
   }
 };
 
-module.exports = { addUser, getUSer, getOneUser, editUser , deleteUser };
+module.exports = { addUser, getUSer, getOneUser, editUser, deleteUser };

@@ -7,11 +7,13 @@ const userSchema = mongoose.Schema({
   username: String,
   email: String,
   phone: String,
+  userId : String
 });
 
 autoIncrement.initialize(mongoose.connection);
 userSchema.plugin(autoIncrement.plugin, "user");
 
 const UserModel = mongoose.model("user", userSchema);
+
 
 module.exports = { UserModel };
