@@ -39,7 +39,7 @@ const AddUser = () => {
   const addUserDetails = async () => {
     console.log("1");
     await addUserAPI(user);
-    navigate("/")
+    navigate("/all")
     
   };
   return (
@@ -63,7 +63,7 @@ const AddUser = () => {
           <Input onChange={(e) => onValueChange(e)} name="phone" />
         </FormControl>
         <FormControl>
-          <Button variant="contained" onClick={addUserDetails}>
+          <Button variant="contained" onClick={addUserDetails}   disabled={!localStorage.getItem("curdAppToken")}>
             Add User
           </Button>
         </FormControl>

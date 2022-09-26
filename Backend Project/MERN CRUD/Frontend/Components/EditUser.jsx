@@ -35,7 +35,7 @@ const EditUser = () => {
 
   const loadUserDetails = async () => {
     const res = await getOneUser(id);
-    console.log("function", res.data);
+    console.log("function 38", res);
     setUser(res.data);
   };
   useEffect(() => {
@@ -51,7 +51,7 @@ const EditUser = () => {
   const editUserDetails = async () => {
     console.log("1");
     await editUserAPI(user,id);
-    navigate("/");
+    navigate("/all");
   };
 
   return (
